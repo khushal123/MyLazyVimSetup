@@ -12,6 +12,9 @@ return {
         "json",
         "json5",
         "jsonc",
+        "ron",
+        "rust",
+        "toml",
       })
     end,
   },
