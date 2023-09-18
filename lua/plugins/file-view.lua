@@ -19,7 +19,15 @@ return {
       {
         "<C-p>",
         function() require("telescope.builtin").find_files({ 
-          find_command = { "rg", "-uu", "--files", "--hidden", "-g", "!.git/", "-g", "!node_modules", "-g", "!tmp/", "-g", "!build/", }
+          find_command = {
+              "rg", "-uu", "--files", "--hidden",
+              "-g", "!.git/",
+              "-g", "!node_modules/",
+              "-g", "!tmp/",
+              "-g", "!build/",
+              "-g", "!dist/",
+              "-g", "!.vscode/",
+          },
         }) end,
         desc = "Find File",
       },
