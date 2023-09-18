@@ -32,12 +32,16 @@ return {
         desc = "Find File",
       },
       {
-        "<C-A>p",
+        "<A-p>",
         "<cmd>Telescope live_grep<cr>",
         desc = "Live Grep",
       },
       {
         "<leader><leader>",
+        "false",
+      },
+      {
+        "<leader>/",
         "false",
       },
     },
