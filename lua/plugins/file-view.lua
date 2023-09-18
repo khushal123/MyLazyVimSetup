@@ -31,6 +31,15 @@ return {
         }) end,
         desc = "Find File",
       },
+      {
+        "<A-p>",
+        "<cmd>Telescope live_grep<cr>",
+        desc = "Live Grep",
+      },
+      {
+        "<leader><leader>",
+        "false",
+      },
     },
   },
 }
