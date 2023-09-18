@@ -1,4 +1,5 @@
-# 💤 LazyVim
+# 💤 My LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+I have setup Rust, go and typescript.
+
+I have change telescope file search with ripgrep in plugins/file-view.lua
