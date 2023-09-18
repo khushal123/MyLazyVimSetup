@@ -32,7 +32,7 @@ return {
         desc = "Find File",
       },
       {
-        "<A-p>",
+        "<C-A>p",
         "<cmd>Telescope live_grep<cr>",
         desc = "Live Grep",
       },
