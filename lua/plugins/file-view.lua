@@ -27,6 +27,8 @@ return {
               "-g", "!build/",
               "-g", "!dist/",
               "-g", "!.vscode/",
+              "-g", "!target/",
+              "-g", "!build/",
           },
         }) end,
         desc = "Find File",

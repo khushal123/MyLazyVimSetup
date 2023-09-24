@@ -13,8 +13,23 @@ return {
     "xero/miasma.nvim",
     lazy = false,
     priority = 1000,
+  },
+  {
+    "catppuccin/nvim",
+    lazy = false,
     config = function()
       vim.cmd("colorscheme miasma")
+    end,
+  },
+  {
+    "decaycs/decay.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      colorscheme = "decay",
+    },
+    config = function()
+      vim.cmd("colorscheme decay")
     end,
   },
 }

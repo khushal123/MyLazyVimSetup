@@ -6,7 +6,8 @@ return {
         shortenToSingleLine = false,
       },
       servers = {
-
+        pyright = {},
+        ruff_lsp = {},
         rust_analyzer = {
           keys = {
             { "K", "<cmd>RustHoverActions<cr>", desc = "Hover Actions (Rust)" },
@@ -122,6 +123,14 @@ return {
         },
       },
       setup = {
+        ruff_lsp = function()
+          require("lazyvim.util").on_attach(function(client, _)
+            if client.name == "ruff_lsp" then
+              -- Disable hover in favor of Pyright
+              client.server_capabilities.hoverProvider = false
+            end
+          end)
+        end,
         gopls = function(_, opts)
           -- workaround for gopls not supporting semanticTokensProvider
           -- https://github.com/golang/go/issues/54531#issuecomment-1464982242

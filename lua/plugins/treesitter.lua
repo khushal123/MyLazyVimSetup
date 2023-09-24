@@ -15,6 +15,7 @@ return {
         "ron",
         "rust",
         "toml",
+        "python",
       })
     end,
   },
